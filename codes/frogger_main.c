@@ -6,8 +6,25 @@
 */
 
 
-#inlcude"raylib.h"
-int main()
-{
+#include "raylib.h"
 
+int main(void)
+{
+    int gw=1200, gh=800;
+    InitWindow(gw, gh, "Game");
+    SetTargetFPS(60);
+
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+        ClearBackground(YELLOW);
+        EndDrawing();
+    }
+
+    
+
+    CloseWindow();
+
+    return 0;
 }
+
