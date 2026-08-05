@@ -1,4 +1,3 @@
-/* it's for me */
 #include "raylib.h"
 #include "raymath.h"
 #define bg_color (Color){144, 246, 144, 255}
@@ -36,7 +35,7 @@ int main(void)
         DrawRectangle(riverposition.x, riverposition.y, gw, 350, GetColor(0x5050AAFF));
         DrawTexturePro(frog[i], (Rectangle){0,0, frog[i].width, frog[i].height},(Rectangle){frogpos.x, frogpos.y, 80, 80}, origin, 0, WHITE);
         DrawTexturePro(car[0], (Rectangle){0, 0, car[0].width, car[0].height}, (Rectangle){car1posx, 510, 100, 80}, origin, 0, WHITE);
-        DrawTexturePro(car[1], (Rectangle){0, 0, car[1].width, car[1].height}, (Rectangle){car2posx, 600, 100, 80}, origin, 0, WHITE);
+        DrawTexturePro(car[1], (Rectangle){0, 0, car[1].width, car[1].height}, (Rectangle){car2posx, 670, 100, 80}, origin, 180, WHITE);
         
 
         if(IsKeyDown(KEY_W) || IsKeyDown(KEY_UP))
@@ -48,6 +47,8 @@ int main(void)
         i=0;
         if(car1posx<-100)
         car1posx=1200;
+        if(car2posx>=1200)
+        car2posx=-100;
         EndDrawing();
     }
 
