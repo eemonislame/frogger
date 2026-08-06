@@ -64,19 +64,20 @@ int main(void)
 
         BeginDrawing();
         ClearBackground(bg_color);
-        DrawRectangle(0, roadposition.y, gw, 350, GetColor(0x454545FF));
+        DrawRectangle(0, roadposition.y, gw, 350, GetColor(0x202020FF));
+        DrawRectangle(0, 672.5, gw, 5, GetColor(0x606060FF));
         DrawRectangle(riverposition.x, riverposition.y, gw, 350, GetColor(0x5050AAFF));
         DrawTexturePro(frog[i], (Rectangle){0,0, frog[i].width, frog[i].height},(Rectangle){frogpos.x, frogpos.y, 80, 80}, origin, 0, WHITE);
         DrawTexturePro(car[0], (Rectangle){0, 0, car[0].width, car[0].height}, (Rectangle){car1posx, 510, 100, 80}, origin, 0, WHITE);
         DrawTexturePro(car[1], (Rectangle){0, 0, car[1].width, car[1].height}, (Rectangle){car2posx, 670, 100, 80}, origin, 180, WHITE);
-        DrawTexturePro(car[2], (Rectangle){0, 0, car[2].width, car[2].height}, (Rectangle){car3posx, 750, 100, 80}, origin, 180, WHITE);
-        DrawTexturePro(car[3], (Rectangle){0, 0, car[3].width, car[3].height}, (Rectangle){car4posx, 830, 100, 80}, origin, 180, WHITE);
+        DrawTexturePro(car[2], (Rectangle){0, 0, car[2].width, car[2].height}, (Rectangle){car3posx, 755, 100, 80}, origin, 180, WHITE);
+        DrawTexturePro(car[3], (Rectangle){0, 0, car[3].width, car[3].height}, (Rectangle){car4posx, 835, 100, 80}, origin, 180, WHITE);
 
         
         DrawTexturePro(car[0], (Rectangle){0, 0, car[0].width, car[0].height}, (Rectangle){car5posx, 510, 100, 80}, origin, 0, WHITE);
         DrawTexturePro(car[1], (Rectangle){0, 0, car[1].width, car[1].height}, (Rectangle){car6posx, 670, 100, 80}, origin, 180, WHITE);
-        DrawTexturePro(car[2], (Rectangle){0, 0, car[2].width, car[2].height}, (Rectangle){car7posx, 750, 100, 80}, origin, 180, WHITE);
-        DrawTexturePro(car[3], (Rectangle){0, 0, car[3].width, car[3].height}, (Rectangle){car8posx, 830, 100, 80}, origin, 180, WHITE);
+        DrawTexturePro(car[2], (Rectangle){0, 0, car[2].width, car[2].height}, (Rectangle){car7posx, 760, 100, 80}, origin, 180, WHITE);
+        DrawTexturePro(car[3], (Rectangle){0, 0, car[3].width, car[3].height}, (Rectangle){car8posx, 840, 100, 80}, origin, 180, WHITE);
 
         
 
