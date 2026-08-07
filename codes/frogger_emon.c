@@ -36,6 +36,7 @@ int main(void)
     srand(time(NULL));
     int arsize = LENGTH(carpos1);
     int rndm_indx, rndm_value;
+    double delay=.3;
 
 
     car1posx=rndmpos(arsize, carpos1);
@@ -117,14 +118,16 @@ int main(void)
         DrawTexturePro(log[2], (Rectangle){0, 0, log[2].width, log[2].height}, (Rectangle){car7posx+center.x+carw, log2posy+center.y, carw, carh}, center, 0, WHITE);
 
 
-
-        if(IsKeyPressed(KEY_W) || IsKeyDown(KEY_UP))
+        delay-=GetFrameTime();
+        if((IsKeyDown(KEY_W) || IsKeyDown(KEY_UP)) && (delay<=0))
         {
             i=1;
             frogpos.y-=70;
+            delay=.3;
         }
         else
         i=0;
+
         if(car1posx<-100 )car1posx=1500;
         if(car2posx>=1400)car2posx=-100;
         if(car3posx<-100)car3posx=1500;
